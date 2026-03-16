@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Página general */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f4f4f7;
+  color: #222;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+}
+
+/* Contenedor principal del CV */
+.cv-container {
+  background-color: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Columna lateral (perfil) */
+.cv-sidebar {
+  background-color: #1f2933;
+  color: #f9fafb;
+  padding: 30px 25px;
+}
+
+.cv-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cv-role {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.cv-section-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0 8px;
+  color: #e5e7eb;
+}
+
+.cv-list {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.cv-list li {
+  margin-bottom: 6px;
+}
+
+/* Columna principal (contenido) */
+.cv-main {
+  padding: 30px 35px;
+}
+
+.cv-main-section {
+  margin-bottom: 25px;
+}
+
+.cv-main-section h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111827;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 4px;
+}
+
+.cv-main-section p {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+/* Experiencia / estudios en formato lista */
+.cv-item {
+  margin-bottom: 12px;
+}
+
+.cv-item-title {
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.cv-item-subtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.cv-item-dates {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Etiquetas de tecnologías */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.tech-tag {
+  font-size: 0.8rem;
+  background-color: #e5f0ff;
+  color: #1d4ed8;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-sidebar {
+    text-align: center;
+  }
+
+  .cv-main {
+    padding: 20px 18px;
+  }
+}
